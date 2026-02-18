@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boba Tea</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/project.css">
+</head>
+<body data-project="boba">
+  <canvas id="bg-canvas" style="position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:0;pointer-events:none;"></canvas>
+  <header>
+    <div class="logo">SBK</div>
+    <nav aria-label="Hovedmeny">
+      <a href="index.html" class="active">PORTEFØLJE</a>
+      <a href="about.html">OM</a>
+      <a href="Kontakt.html">KONTAKT</a>
+    </nav>
+  </header>
+
+  <div class="project-back-btn-container">
+    <a class="project-back-btn" href="index.html#prosjekter" aria-label="Tilbake">
+      <span class="arrow">←</span>
+      <span>Tilbake</span>
+    </a>
+  </div>
+
+  <main class="project-hero reveal">
+    <div class="project-left">
+      <section class="project-media" aria-label="Prosjektbilde">
+        <img id="projectHeroImage" src="images/bobaf2.png" alt="Boba Tea – prosjektbilde 1" loading="eager">
+      </section>
+
+      <section class="project-note" aria-label="Prosjektbeskrivelse">
+        Denne prototypen ble laget fordi jeg savnet en slik løsning i Gjøvik, og fordi jeg ville lære å bruke variabler. Handlekurven fungerer og kalkulerer den totale prisen, man kan også legge til og fjerne produkter.
+      </section>
+    </div>
+
+    <section class="project-overview" aria-label="Prosjektoversikt">
+      <h1>🧋 Boba Tea</h1>
+      <ul class="project-overview-list">
+        <li><span class="project-overview-label">Type:</span> <span class="project-overview-value">Eget prosjekt</span></li>
+        <li><span class="project-overview-label">Formål:</span> <span class="project-overview-value">Lære mer om bruk av variabler i Figma</span></li>
+        <li><span class="project-overview-label">Tidsramme:</span> <span class="project-overview-value">🕦 1 uke</span></li>
+        <li><span class="project-overview-label">Resultat:</span> <span class="project-overview-value">En applikasjon der man kan bestille bubble tea i Gjøvik. Prototypen har en fungerende handlekurv-løsning</span></li>
+      </ul>
+    </section>
+  </main>
+
+  <section class="project-embed reveal" aria-label="Prototype">
+    <h2 class="project-embed-title"> ↓ Test prototypen ↓ </h2>
+    <div class="project-embed-frame">
+      <iframe
+        src="https://embed.figma.com/proto/nWbTVY0rCKYVvUtqj6hXgr/boba?page-id=0%3A1&node-id=0-88&viewport=-9%2C188%2C0.26&scaling=scale-down&content-scaling=fixed&embed-host=share"
+        allowfullscreen
+        loading="lazy"
+        title="Boba Tea prototype"
+      ></iframe>
+    </div>
+  </section>
+
+  <section class="project-process reveal" aria-label="Bilder fra prosess">
+    <h2 class="project-section-title">Bilder fra prosessen</h2>
+    <p class="project-section-lead">Low fidelity & komponenter</p>
+    <div class="project-process-gallery">
+      <figure class="project-process-figure reveal">
+        <img src="images/bobalofi.png" alt="Boba Tea – bobalofi (prosessbilde)" loading="lazy">
+      </figure>
+      <figure class="project-process-figure reveal">
+        <img src="images/bobabild.png" alt="Boba Tea – bobabild (prosessbilde)" loading="lazy">
+      </figure>
+      <figure class="project-process-figure reveal">
+        <img src="images/bobafunction.png" alt="Boba Tea – bobafunction (prosessbilde)" loading="lazy">
+      </figure>
+    </div>
+  </section>
+
+  <!-- Bottom CTA: Learn more about me -->
+  <div class="bottom-cta" aria-label="Mer om meg">
+    <a class="bottom-cta__btn" href="about.html" aria-label="Lær mer om meg (åpner Om-siden)">
+      <span>Lær mer om meg</span>
+      <span class="bottom-cta__arrow" aria-hidden="true">→</span>
+    </a>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      © 2026 Selma Bjørtomt Keser.
+    </div>
+  </footer>
+
+  <script src="assets/js/motion.js"></script>
+  <script>
+  function revealOnScroll() {
+    const reveals = document.querySelectorAll('.reveal');
+    for (const el of reveals) {
+      const windowHeight = window.innerHeight;
+      const elementTop = el.getBoundingClientRect().top;
+      const revealPoint = 80;
+      if (elementTop < windowHeight - revealPoint) {
+        el.classList.add('active');
+      } else {
+        el.classList.remove('active');
+      }
+    }
+  }
+  window.addEventListener('scroll', revealOnScroll);
+  window.addEventListener('load', revealOnScroll);
+
+  // Bildekarusell for prosjektmedia
+  const images = [
+    'images/bobaf2.png'
+  ];
+  const alts = [
+    'Boba Tea – prosjektbilde 1'
+  ];
+  let current = 0;
+  const heroImg = document.getElementById('projectHeroImage');
+  const mediaSection = document.querySelector('.project-media');
+  function showImage(idx) {
+    heroImg.src = images[idx];
+    heroImg.alt = alts[idx];
+  }
+  if (heroImg && mediaSection) {
+    showImage(0);
+  }
+  </script>
+</body>
+</html>

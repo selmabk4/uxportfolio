@@ -1,0 +1,95 @@
+/* Dropdown seksjon for 🤫 */
+.about-dropdown {
+  margin: 2rem 0;
+  text-align: left;
+}
+.dropdown-toggle {
+  background: #f3f3f3;
+  border: none;
+  font-size: 1.3rem;
+  padding: 0.7rem 1.2rem;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  font-family: inherit;
+}
+.dropdown-toggle:hover,
+.dropdown-toggle[aria-expanded="true"] {
+  background: #e0e0e0;
+}
+.dropdown-content {
+  margin-top: 0.7rem;
+  padding: 1rem;
+  background: #fffbe7;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  font-size: 1rem;
+  animation: fadeIn 0.3s;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fun-toggle {
+  font-size: 2.2rem;
+  padding: 1.1rem 2.2rem;
+  border-radius: 2.5rem;
+  background: linear-gradient(90deg, #ffe6b3 0%, #ffd6e0 100%);
+  color: #e08b00;
+  border: 2.5px solid #e08b00;
+  box-shadow: 0 4px 18px rgba(224,139,0,0.10), 0 1.5px 0 #fff inset;
+  transition: transform 0.15s, box-shadow 0.15s, background 0.3s;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  animation: fun-bounce 1.2s infinite;
+}
+.fun-toggle:hover, .fun-toggle:focus {
+  background: linear-gradient(90deg, #ffd6e0 0%, #ffe6b3 100%);
+  color: #b35c00;
+  transform: scale(1.08) rotate(-2deg);
+  box-shadow: 0 8px 24px rgba(224,139,0,0.18);
+}
+@keyframes fun-bounce {
+  0%, 100% { transform: translateY(0); }
+  20% { transform: translateY(-7px); }
+  40% { transform: translateY(0); }
+  60% { transform: translateY(-4px); }
+  80% { transform: translateY(0); }
+}
+
+.about-secret-section {
+  margin: 3.5rem 0 2.5rem 0;
+  text-align: center;
+}
+.about-secret-lead {
+  font-size: 1.35rem;
+  margin-bottom: 1.2rem;
+  color: #222;
+}
+.about-secret-dropdown {
+  display: inline-block;
+}
+.about-secret-toggle {
+  font-size: 1.5rem;
+  padding: 1.1rem 2.2rem;
+  border-radius: 2.5rem;
+  background: linear-gradient(90deg, #ffe6b3 0%, #ffd6e0 100%);
+  color: #e08b00;
+  border: 2.5px solid #e08b00;
+  box-shadow: 0 4px 18px rgba(224,139,0,0.10), 0 1.5px 0 #fff inset;
+  transition: background 0.2s, transform 0.15s, box-shadow 0.15s;
+  font-family: inherit;
+  cursor: pointer;
+  margin-bottom: 0.7rem;
+}
+.about-secret-toggle:hover, .about-secret-toggle[aria-expanded="true"] {
+  background: linear-gradient(90deg, #ffd6e0 0%, #ffe6b3 100%);
+  color: #b35c00;
+  transform: scale(1.07) rotate(-2deg);
+  box-shadow: 0 8px 24px rgba(224,139,0,0.18);
+}
+.about-secret-content {
+  animation: fadeIn 0.3s;
+}

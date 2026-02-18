@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIMInnlandet</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/project.css">
+  <!-- Inline project styles moved to projectstyle.css -->
+</head>
+<body>
+  <canvas id="bg-canvas" style="position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:0;pointer-events:none;"></canvas>
+  <header>
+    <div class="logo">SBK</div>
+    <nav aria-label="Hovedmeny">
+      <a href="index.html" class="active">PORTEFØLJE</a>
+      <a href="about.html">OM</a>
+      <a href="Kontakt.html">KONTAKT</a>
+    </nav>
+  </header>
+
+  <div class="project-back-btn-container">
+    <a class="project-back-btn" href="index.html#prosjekter" aria-label="Tilbake">
+      <span class="arrow">←</span>
+      <span>Tilbake</span>
+    </a>
+  </div>
+
+  <main class="project-hero reveal">
+    <div class="project-left">
+      <section class="project-media" aria-label="Prosjektbilde" role="button" tabindex="0" aria-controls="projectHeroImage" aria-label="Neste bilde">
+        <img id="projectHeroImage" src="images/xr2.png" alt="SIMInnlandet – VR-simulering 1" loading="eager">
+        <span class="project-media-hint" aria-hidden="true">Klikk for neste bilde</span>
+      </section>
+
+      <section class="project-note" aria-label="Prosjektbeskrivelse">
+       🍁 I løpet av høstsemesteret designet jeg og tre andre studenter en prototype for <a href="https://www.sykehuset-innlandet.no/avdelinger/siminnlandet/" target="_blank" rel="noopener noreferrer">SIMInnlandet</a>. Sykehuset ønsket å trene ansatte ved hjelp av AI pasienter, vår oppgave var å <strong>bygge engasjerende og brukersentrert UX rundt AI scenarioene.</strong>
+      </section>
+    </div>
+
+    <section class="project-overview" aria-label="Prosjektoversikt">
+      <h1>🏥 SIMInnlandet</h1>
+      <ul class="project-overview-list">
+        <li><span class="project-overview-label">Oppdragsgiver:</span> <span class="project-overview-value"><a href="https://www.sykehuset-innlandet.no/avdelinger/siminnlandet/" target="_blank" rel="noopener noreferrer"> Sykehuset i Innlandet</a></span></li>
+        <li><span class="project-overview-label">Oppgave:</span> <span class="project-overview-value">Utvikle en løsning som gir helsepersonell muligheten til å trene på håndtering av psykisk syke pasienter i trygge omgivelser.</span></li>
+        <li><span class="project-overview-label">Emne:</span> <span class="project-overview-value">Design av interaktive miljøer</span></li>
+        <li><span class="project-overview-label">Tidsramme:</span> <span class="project-overview-value">🕦 10 uker</span></li>
+        <li><span class="project-overview-label">Resultat:</span> <span class="project-overview-value">Prototype i Figma for VR-headset, hvor man får møte en AI-pasient.</span></li>
+      </ul>
+    </section>
+  </main>
+
+  <section class="project-embed reveal" aria-label="Prototype">
+    <h2 class="project-embed-title"> ↓ Test prototypen ↓  </h2>
+    <div class="project-embed-frame">
+      <iframe
+        style="border: 1px solid rgba(0, 0, 0, 0.1);"
+        src="https://embed.figma.com/proto/1B5k7km5tDQS2yXKiLsBsO/SIMinnlandet?page-id=0%3A1&node-id=1-1088&viewport=1730%2C808%2C0.09&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A1250&embed-host=share"
+        allowfullscreen
+        loading="lazy"
+        title="SIMInnlandet prototype"
+      ></iframe>
+    </div>
+  </section>
+
+  <section class="project-process reveal" aria-label="Designprosess">
+    <div class="project-process-figure-flex">
+      <h3 class="project-process-subtitle">Designprosess og metoder <span aria-hidden="true">🎨</span></h3>
+      <figure class="project-process-figure">
+        <a href="images/xrprosess.png" target="_blank" rel="noopener noreferrer">
+          <img src="images/xrprosess.png" alt="Oversikt over designprosessen for SIMInnlandet" loading="lazy">
+        </a>
+      </figure>
+    </div>
+
+    <article class="project-process-text reveal" aria-label="Innsiktsarbeid">
+      <h3 class="project-process-subtitle">Innsiktsarbeid <span aria-hidden="true">🔎</span></h3>
+      <div class="project-insight-flex">
+        <figure class="project-mascot reveal" aria-label="Løsningens maskot">
+          <img src="images/xrekorn.png" alt="Maskoten til løsningen: XR-ekorn" loading="lazy">
+          <figcaption>Løsningens maskot</figcaption>
+        </figure>
+        <div class="project-insight-text">
+          <p>
+            Designprosessens innsiktsarbeid besto av utforskning av lignende løsninger og forskning på opplæring i XR miljøer.
+            I tillegg til en spørsmålsrunde med SIMInnlandet, hvor vi fikk teste den allerede eksisterende VR løsningen.
+          </p>
+          <p class="project-process-highlight">
+            <strong>Hovedfunn:</strong> VR Scenarioene trenger UX design rundt, slik at helsepersonell kan fokusere på læringen.
+            Løsningen må være veldig intuitive, da tekniske problemer kan hindre læring.
+          </p>
+        </div>
+      </div>
+    </article>
+
+    <article class="project-process-text reveal" aria-label="Personas">
+      <h3 class="project-process-subtitle">Personas <span aria-hidden="true">🧑‍🏭</span></h3>
+      <p>
+        I dette prosjektet har personas hatt en viktig rolle i arbeidet ved å være en <strong>påminner om hvem vi designer for</strong>.
+      </p>
+      <p>
+        Målgruppen for denne løsningen er helsepersonell i ulike aldre og med ulike spesialiseringer. Dermed måtte designforslaget
+        og brukeropplevelsen være tilpasset et bredt spekter av individer, som har forskjellige teknologiske ferdigheter og erfaringer.
+      </p>
+      <p class="project-process-highlight">
+        XR løsninger kan oppleves kompliserte &amp; tekniske, god UX er nøkkelen til å gjøre XR til et brukervennlig læringsverktøy!
+      </p>
+
+      <div class="project-personas reveal">
+        <figure class="project-persona reveal">
+          <img src="images/xrpersona1.png" alt="Persona: Ellinor" loading="lazy">
+        </figure>
+        <figure class="project-persona reveal">
+          <img src="images/xrpersona2.png" alt="Persona: Leif" loading="lazy">
+        </figure>
+      </div>
+    </article>
+
+    <article class="project-process-text reveal" aria-label="Sitemap">
+      <h3 class="project-process-subtitle">Sitemap <span aria-hidden="true">🗺️</span></h3>
+      <p>
+        Her er et overblikk over strukturen i løsningen.
+      </p>
+      <p>Det ble gjort mange justeringer og iterasjoner på sitemappet, og vi måtte gå tilbake flere ganger. 
+        Orginalt hadde vi benyttet ordet "veiledning" i stedet for "introduksjon", SIMInnlandet kommenterte på at veiledning ofte brukes i en annen sammenheng hos deres ansatte. 
+      Dermed måtte vi justere blant annet terminologien i løsningen.</p>
+      <div class="project-sitemaps-flex reveal">
+        <figure class="project-sitemap reveal">
+          <img src="images/utkast.png" alt="Utkast 1 av sitemap" loading="lazy">
+          <figcaption>Utkast 1</figcaption>
+        </figure>
+        <figure class="project-sitemap reveal">
+          <img src="images/xrsitemap.png" alt="Endelig sitemap for SIMInnlandet" loading="lazy">
+          <figcaption>Endelig sitemap</figcaption>
+        </figure>
+      </div>
+    </article>
+
+    <article class="project-process-text reveal" aria-label="Refleksjon">
+      <h3 class="project-process-subtitle">Refleksjon <span aria-hidden="true">💭</span></h3>
+      <p>
+        Prosjektet med SIMInnlandet var veldig lærerikt, og ga oss muligheten til å bruke kreativitet og gamification prinsipper til det fulleste. 
+        Tilbakemeldingene vi fikk underveis førte til at løsningen ble både mer engasjerende og brukervennlig. 
+        Det var også spennende å jobbe med UX i et XR miljø, noe som også utfordret ferdighetene våre i Figma.
+      </p>
+      <p>
+        Selv om prosjektet resulterte i karakteren A, er det fortsatt rom for flere iterasjoner.
+        Vi fokuserte mest på å selve onboarding-delen av løsningen, noe som førte til at debrief-delen ikke fikk like mye oppmerksomhet.
+        Dermed er debrief-delen av prototypen ikke like engasjerende. 
+        Det kunne også blitt eksperimentert mer med fargevalget i løsningen, ved å ikke bare gå utifra SIMInnlandets eksisterende fargepalett.
+      </p>
+    </article>
+
+    <article class="project-process-text reveal" aria-label="Prototype-løsning">
+      <h3 class="project-process-subtitle">Se prototype-løsningen <span aria-hidden="true">🖥️</span></h3>
+      <p>
+        Link til prototypen i Figma:
+        <a href="https://www.figma.com/proto/1B5k7km5tDQS2yXKiLsBsO/SIMinnlandet?page-id=0%3A1&node-id=1-1204&p=f&viewport=417%2C378%2C0.02&t=eJw5DiNaEL4I5Oyb-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A1250" target="_blank" rel="noopener noreferrer">Åpne Figma-prototypen</a>
+      </p>
+      <figure class="project-solution reveal">
+        <a href="images/xrløsning.png" target="_blank" rel="noopener noreferrer">
+          <img src="images/xrløsning.png" alt="Skjermbilde av prototype-løsningen" loading="lazy">
+        </a>
+        <figcaption>Bildet av løsningen</figcaption>
+      </figure>
+    </article>
+  </section>
+
+  <!-- Bottom CTA: Learn more about me -->
+  <div class="bottom-cta" aria-label="Mer om meg">
+    <a class="bottom-cta__btn" href="about.html" aria-label="Lær mer om meg (åpner Om-siden)">
+      <span>Lær mer om meg</span>
+      <span class="bottom-cta__arrow" aria-hidden="true">→</span>
+    </a>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      © 2026 Selma Bjørtomt Keser
+    </div>
+  </footer>
+
+  <!-- Load project page motion -->
+  <script src="assets/js/motion.js"></script>
+  <script>
+  function revealOnScroll() {
+    const reveals = document.querySelectorAll('.reveal');
+    for (const el of reveals) {
+      const windowHeight = window.innerHeight;
+      const elementTop = el.getBoundingClientRect().top;
+      const revealPoint = 80;
+      if (elementTop < windowHeight - revealPoint) {
+        el.classList.add('active');
+      } else {
+        el.classList.remove('active');
+      }
+    }
+  }
+  window.addEventListener('scroll', revealOnScroll);
+  window.addEventListener('load', revealOnScroll);
+
+  // Bildekarusell for prosjektmedia
+const images = [
+  'images/xr2.png',
+  'images/xr1.png',
+  'images/xr4.png'
+];
+const alts = [
+  'SIMInnlandet – VR-simulering 1',
+  'SIMInnlandet – VR-simulering 2',
+  'SIMInnlandet – VR-simulering 3'
+];
+let current = 0;
+const heroImg = document.getElementById('projectHeroImage');
+const mediaSection = document.querySelector('.project-media');
+function showImage(idx) {
+  heroImg.src = images[idx];
+  heroImg.alt = alts[idx];
+}
+if (heroImg && mediaSection) {
+  mediaSection.addEventListener('click', function() {
+    current = (current + 1) % images.length;
+    showImage(current);
+  });
+  // Automatisk bytte hvert 4 sekund
+  setInterval(function() {
+    current = (current + 1) % images.length;
+    showImage(current);
+  }, 4000);
+}
+</script>
+</body>
+</html>

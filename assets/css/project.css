@@ -1,0 +1,474 @@
+/* Project pages CSS entrypoint (kept visually identical) */
+
+@import url("../../css/base.css");
+@import url("../../projectstyle.css");
+
+.project-insight-flex {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.project-mascot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.project-mascot img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 1rem;
+  margin-left: 0;
+  margin-right: 0;
+}
+.project-insight-text {
+  flex: 1 1 300px;
+  min-width: 220px;
+  max-width: 100%;
+  box-sizing: border-box;
+  word-break: break-word;
+}
+.project-process-highlight {
+  background: #e6f0ff;
+  color: #1a3a6b;
+  border-left: 4px solid #3b82f6;
+  padding: 0.75em 1em;
+  margin: 1em 0;
+  border-radius: 0.5em;
+  font-weight: 500;
+}
+.project-sitemaps-flex {
+  display: flex;
+  gap: 2.5rem;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: wrap;
+  margin-bottom: 2em;
+}
+.project-sitemaps-flex .project-sitemap {
+  flex: 1 1 320px;
+  max-width: 380px;
+  background: #f7faff;
+  border-radius: 1.2em;
+  box-shadow: 0 4px 16px rgba(60,90,150,0.10);
+  padding: 1.2em 1em 1em 1em;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+.project-sitemaps-flex img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.75em;
+  box-shadow: 0 2px 8px rgba(60,90,150,0.08);
+  background: #fff;
+  margin-left: 0 !important;
+}
+.project-sitemaps-flex figcaption {
+  margin-top: 0.8em;
+  font-size: 1.15em;
+  color: #1a3a6b;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+.project-solution {
+  text-align: left;
+}
+.project-solution img {
+  max-width: 420px;
+  width: 100%;
+  height: auto;
+  border-radius: 0.75em;
+  box-shadow: 0 2px 8px rgba(60,90,150,0.08);
+  margin: 0;
+  display: block;
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+}
+.project-solution img:hover {
+  box-shadow: 0 4px 16px rgba(60,90,150,0.18);
+}
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* Sikrer at affinity map-bildet alltid vises */
+.project-affinity {
+  display: block !important;
+}
+.project-affinity img {
+  max-width: 600px;
+  height: auto;
+  margin-left: 0 !important;
+  display: block !important;
+}
+
+@media (min-width: 601px) {
+  .project-affinity img {
+    max-width: 600px;
+  }
+}
+@media (max-width: 700px) {
+  .project-insight-flex {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: stretch;
+  }
+  .project-mascot {
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .project-mascot img {
+    width: 70vw;
+    max-width: 220px;
+    height: auto;
+    border-radius: 1rem;
+  }
+  .project-sitemaps-flex {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .project-sitemaps-flex .project-sitemap {
+    max-width: 90vw;
+    width: 100%;
+    padding: 0.5em 0.5em 0.8em 0.5em;
+  }
+  .project-sitemaps-flex img {
+    max-width: 220px;
+    width: 100%;
+    height: auto;
+    border-radius: 0.75em;
+  }
+  .project-sitemaps-flex figcaption {
+    font-size: 1em;
+  }
+  .project-overview-list {
+    text-align: left;
+    align-items: flex-start;
+  }
+  .project-overview-list li {
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 900px) {
+  .project-process-text,
+  .project-sitemap-flex,
+  .project-lofidelity-flex,
+  .project-highfidelity-flex,
+  .project-wireframe-flex,
+  .project-solution-flex {
+    max-width: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    padding-right: 0;
+    padding-left: 0.5rem;
+  }
+  .project-sitemap img,
+  .project-persona img,
+  .project-affinity img,
+  .project-solution img,
+  .project-sitemaps-flex img,
+  .project-wireframe-image img,
+  .project-lofidelity-image img,
+  .project-highfidelity-images img,
+  .project-sitemap-image img {
+    width: 100%;
+    max-width: 260px;
+    height: auto;
+    margin-left: 0;
+    margin-right: auto;
+    display: block;
+    box-sizing: border-box;
+  }
+}
+@media (max-width: 600px) {
+  .project-process-text,
+  .project-solution {
+    width: 95vw;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+  }
+  .project-process-text img,
+  .project-persona img,
+  .project-sitemap img,
+  .project-solution img {
+    width: 90vw;
+    max-width: 320px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .project-mascot img {
+    width: 35vw;
+    max-width: 100px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .project-personas {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+  .project-solution img {
+    width: 50vw;
+    max-width: 160px;
+    height: auto;
+    display: block;
+    margin-left: 0;
+    margin-right: auto;
+  }
+  .project-affinity img {
+    max-width: 300px;
+  }
+}
+/* Responsive embed prototype frame */
+.project-embed-frame {
+  width: 100%;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.project-embed-frame iframe {
+  width: 100%;
+  max-width: 800px;
+  height: 450px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 600px) {
+  .project-embed-frame iframe {
+    max-width: 100%;
+    height: 220px;
+  }
+}
+/* Refleksjon-liste: bedre visuell fremstilling */
+.reflection-list-title {
+  margin-top: 1.5em;
+  font-size: 1.1em;
+  font-weight: 700;
+  color: #3a3a3a;
+}
+.reflection-list {
+  margin: 1em 0 1.5em 0;
+  padding-left: 1.5em;
+  list-style: disc;
+  font-size: 1em;
+  color: #333;
+}
+.reflection-list li {
+  margin-bottom: 0.7em;
+  padding: 0.4em 0.8em;
+  background: #f7f7fa;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+.reflection-list li span {
+  font-size: 1.2em;
+}
+/* Flex layout for process-list and dd.png side-by-side on desktop */
+.process-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5em;
+}
+@media (min-width: 700px) {
+  .process-flex {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2.5em;
+  }
+  .process-list {
+    flex: 1 1 0;
+  }
+  .process-image {
+    flex: 0 0 auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    align-self: flex-start;
+  }
+  /* Gjør dd.png større på desktop i designprosess og metoder */
+  .process-image img {
+    max-width: 440px;
+  }
+}
+@media (max-width: 600px) {
+  /* Venstrestiller dd.png på mobil i designprosess og metoder */
+  .process-image img {
+    margin-left: 0;
+    margin-right: 0;
+    display: block;
+  }
+}
+@media (min-width: 700px) {
+  .process-image {
+    display: block;
+  }
+  .process-image img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+/* Gjør teksten i process-list større for bedre lesbarhet */
+.process-list {
+  font-size: 1.15em;
+}
+@media (min-width: 700px) {
+  .process-list {
+    font-size: 1.1em;
+  }
+}
+/* Skjuler dd.png (process-image) på mobil, viser kun på desktop */
+.process-image {
+  display: none !important;
+}
+@media (min-width: 700px) {
+  .process-image {
+    display: block !important;
+  }
+}
+.project-highfidelity-flex {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: flex-start;
+}
+.project-highfidelity-text {
+  flex: 1 1 0;
+  min-width: 0;
+}
+.project-highfidelity-images {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  flex: 1 1 0;
+  min-width: 0;
+}
+@media (max-width: 900px) {
+  .project-highfidelity-flex {
+    flex-direction: column;
+  }
+  .project-highfidelity-images {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+.project-lofidelity-flex {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: flex-start;
+}
+.project-lofidelity-text {
+  flex: 1 1 0;
+  min-width: 0;
+}
+.project-lofidelity-image {
+  flex: 1 1 0;
+  min-width: 0;
+}
+@media (max-width: 900px) {
+  .project-lofidelity-flex {
+    flex-direction: column;
+  }
+}
+.project-wireframe-flex {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: flex-start;
+}
+.project-wireframe-text {
+  flex: 1 1 0;
+  min-width: 0;
+}
+.project-wireframe-image {
+  flex: 1 1 0;
+  min-width: 0;
+}
+@media (max-width: 900px) {
+  .project-wireframe-flex {
+    flex-direction: column;
+  }
+}
+.project-sitemap-flex {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: flex-start;
+}
+.project-sitemap-text {
+  flex: 1 1 0;
+  min-width: 0;
+}
+.project-sitemap-image {
+  flex: 1 1 0;
+  min-width: 0;
+}
+@media (max-width: 900px) {
+  .project-sitemap-flex {
+    flex-direction: column;
+  }
+}
+.project-solution-flex {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: flex-start;
+}
+.project-solution-text {
+  flex: 1 1 0;
+  min-width: 0;
+}
+.project-solution-image {
+  flex: 1 1 0;
+  min-width: 0;
+}
+@media (max-width: 900px) {
+  .project-solution-flex {
+    flex-direction: column;
+  }
+}
+.wireframe-list {
+  margin-top: 1.2em;
+  margin-bottom: 0.5em;
+  padding-left: 1.5em;
+  list-style-type: disc;
+  font-size: 1.08em;
+  line-height: 1.7;
+  color: #444;
+}
+.wireframe-list li {
+  margin-bottom: 0.3em;
+  padding-left: 0.2em;
+  position: relative;
+}
+.wireframe-list li::marker {
+  color: #2563eb; /* Blå farge */
+  font-size: 1.2em;
+}

@@ -1,0 +1,55 @@
+/* =========================
+   CONTACT (Contact.html)
+   ========================= */
+
+/* Contact page – clear list */
+.contact-list{
+  margin-top: 22px;
+  width: 100%;
+  max-width: 860px;
+  border: 1px solid rgba(17, 24, 39, 0.10);
+  border-radius: 18px;
+  background: rgba(255,255,255,0.78);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  overflow: hidden;
+}
+
+.contact-row{
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 18px;
+  padding: 18px 20px;
+  border-top: 1px solid rgba(17, 24, 39, 0.08);
+}
+
+.contact-row:first-child{ border-top: none; }
+
+.contact-label{
+  font-weight: 800;
+  color: #111827;
+  font-size: 1.05rem;
+}
+
+.contact-value{
+  color: #1f3a8a;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  overflow-wrap: anywhere;
+  font-size: 1.05rem;
+}
+
+.contact-value:hover{ color: #0a1620; }
+
+@media (max-width: 560px){
+  .contact-row{ grid-template-columns: 1fr; gap: 8px; }
+}
+
+/* Contact – center intro text on mobile only */
+@media (max-width: 700px) {
+  .contact-intro {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tjønnås & Norvald</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/project.css">
+</head>
+<body>
+  <canvas id="bg-canvas" style="position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:0;pointer-events:none;"></canvas>
+  <header>
+    <div class="logo">SBK</div>
+    <nav aria-label="Hovedmeny">
+      <a href="index.html" class="active">PORTEFØLJE</a>
+      <a href="about.html">OM</a>
+      <a href="Kontakt.html">KONTAKT</a>
+    </nav>
+  </header>
+
+  <div class="project-back-btn-container">
+    <a class="project-back-btn" href="index.html#prosjekter" aria-label="Tilbake">
+      <span class="arrow">←</span>
+      <span>Tilbake</span>
+    </a>
+  </div>
+
+  <main class="project-hero reveal">
+    <div class="project-left">
+      <section class="project-media" aria-label="Prosjektbilde" role="button" tabindex="0" aria-controls="projectHeroImage" aria-label="Neste bilde">
+        <img id="projectHeroImage" src="images/tnmockup.jpg" alt="Tjønnås – mockup" loading="eager">
+        <span class="project-media-hint" aria-hidden="true">Klikk for neste bilde</span>
+      </section>
+
+      <section class="project-note" aria-label="Prosjektbeskrivelse">
+        Dette prosjektet ble gjort tverrfaglig i samarbeid med tre andre studenter fra grafisk design, webutvikling og interaksjonsdesign. Løsningen er basert på innsikt fra rundt 20 intervjuer med både kunder og ansatte hos Tjønnås Delikatesser og Norvald kafé i Gjøvik.
+        I etterkant av prosjektet har jeg iterert videre på designet.
+      </section>
+    </div>
+
+    <section class="project-overview" aria-label="Prosjektoversikt">
+      <h1>☕️ Tjønnås & Norvald</h1>
+      <ul class="project-overview-list">
+        <li><span class="project-overview-label">Oppdragsgiver:</span> <span class="project-overview-value"><a href="https://tjonnas.com/" target="_blank" rel="noopener noreferrer">Tjønnås Delikatesser</a></span></li>
+        <li><span class="project-overview-label">Oppgave:</span> <span class="project-overview-value">Utarbeide nye nettsider med utgangspunkt i kunde- og ansattebehov.</span></li>
+        <li><span class="project-overview-label">Emne:</span> <span class="project-overview-value">Informasjonsarkitektur</span></li>
+        <li><span class="project-overview-label">Tidsramme:</span> <span class="project-overview-value">🕦 11 uker</span></li>
+        <li><span class="project-overview-label">Resultat:</span> <span class="project-overview-value">Booking- og bestillingssystem for desktop og mobil.</span></li>
+      </ul>
+    </section>
+  </main>
+
+  <section class="project-embed reveal" aria-label="Prototype">
+    <h2 class="project-embed-title"> ↓ Test prototypen for mobil ↓ </h2>
+    <div class="project-embed-frame">
+      <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/g6flqCqh2Y1aNqRgA8u7wb/Tj%C3%B8nn%C3%A5s-Delikatesser?page-id=0%3A1&node-id=33-287&viewport=435%2C-906%2C0.2&scaling=scale-down&content-scaling=fixed&embed-host=share" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <section class="project-process reveal" aria-label="Designprosess">
+    <div class="project-process-figure-flex">
+      <h3 class="project-process-subtitle">Designprosess og metoder <span aria-hidden="true">🎨</span></h3>
+      <div class="project-process-text">
+        <div class="process-flex">
+          <ul class="process-list">
+            <li><span class="process-icon">🗣️</span> Intervju</li>
+            <li><span class="process-icon">🗂️</span> Affinitymap</li>
+            <li><span class="process-icon">👥</span> Personas</li>
+            <li><span class="process-icon">📝</span> Storyboarding</li>
+            <li><span class="process-icon">📄</span> Low-fidelity prototype</li>
+            <li><span class="process-icon">💻</span> High-fidelity prototype</li>
+            <li><span class="process-icon">🎨</span> Mine iterasjoner</li>
+          </ul>
+          <figure class="process-image">
+            <img src="images/dd.png" alt="Designprosess illustrasjon" loading="lazy">
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <article class="project-process-text reveal" aria-label="Innsiktsarbeid">
+      <h3 class="project-process-subtitle">Innsiktsarbeid <span aria-hidden="true">🔎</span></h3>
+      <div class="project-insight-flex">
+        <div class="project-insight-text">
+          <p>Under dette prosjektet brukte vi mye tid på å gjennomføre grundig innsiktsarbeid for å komme frem til problemene. 
+            I starten av arbeidet gjennomførte vi et intervju av en Tjønnås kunde. Senere fikk vi også tilgang til 19 andre intervjuer som var gjennomført av andre grupper i klassen. 
+            Både kunder og ansatte hos Tjønnås og Norvald ble intervjuet, og vi fikk dermed innsikt i både kunde- og ansattbehov.
+          </p>
+          <p>Vi startet med å analysere intervjuene og kategorisere funn i et affinity map.
+            Noen av problemene som ble identifisert angikk manglende informasjon, vanskeligheter med å bestille og booke, lite produktsynligheten og interne kommunikasjonsproblemer. 
+          </p>
+          <p>Videre organiserte vi funnene i behov, der vi skilte mellom kundebehov og ansattebehov.</p>
+          <p class="project-process-highlight"><strong>Hovedfunn:</strong> Vi fant et tydelig ønske og behov for et bestillingssystem, men også booking.</p>
+          <figure class="project-affinity reveal">
+            <img src="images/tnbehov.png" alt="Affinity Map" loading="lazy">
+            <figcaption>Affinity Map</figcaption>
+          </figure>
+        </div>
+      </div>
+    </article>
+
+    <article class="project-process-text reveal" aria-label="Personas">
+      <h3 class="project-process-subtitle">Personas <span aria-hidden="true">👤</span></h3>
+      <p>Vi utarbeidet fire personas basert på affinity kartet og intervjuene, i tillegg til to scenarioer per persona.
+        Gruppen gjorde en dot voting av hvilke scenarioer vi ønsket å utforske videre, og danne en løsning for.
+        Her vant de fiktive personene <strong>Katrhine</strong> og <strong>Jørgen</strong>, og scenarioene deres tilsvarte at vi måtte lage en løsning for bestilling og reservasjon.
+        Vi valgte å spesifikt fokusere på bestilling av gavekurver, da det bare foregikk på Instagram.
+      </p>
+      <div class="project-personas reveal">
+        <figure class="project-persona reveal">
+          <img src="images/tnpersona1.png" alt="Tjønnås Persona 1" loading="lazy">
+        </figure>
+        <figure class="project-persona reveal">
+          <img src="images/tnpersona2.png" alt="Tjønnås Persona 2" loading="lazy">
+        </figure>
+      </div>
+    </article>
+
+    <article class="project-process-text reveal project-wireframe-flex" aria-label="Sitemap">
+      <div class="project-wireframe-text">
+        <h3 class="project-process-subtitle">Wireframing/Storyboarding <span aria-hidden="true">✍️</span></h3>
+        <p>Videre begynte vi å skissere ut hvordan vi ønsket at løsningen skulle se ut.
+           Her ble det en del diskusjoner om hva som er best for brukeren, og hvordan vi kunne imøtekomme behovene deres.
+           Vi benyttet metoden crazy 8s for å oppnå flest mulig forslag på kort tid.
+       </p>
+        <ul class="wireframe-list">
+          <li>Skisser på ark</li>
+          <li>Diskusjoner</li>
+          <li>Crazy 8s</li>
+        </ul>
+      </div>
+      <div class="project-wireframe-image">
+        <div class="project-sitemaps-flex reveal">
+          <figure class="project-sitemap reveal">
+            <img src="images/tnskisse4.png" alt="Skisse 4 for Tjønnås" loading="lazy">
+            <figcaption>Wireframes</figcaption>
+          </figure>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <section class="project-process reveal" aria-label="Designprosess">
+    <article class="project-process-text reveal project-sitemap-flex" aria-label="Sitemap">
+      <div class="project-sitemap-text">
+        <h3 class="project-process-subtitle">Sitemap <span aria-hidden="true">🗺️</span></h3>
+        <p>Etter storyboardingen lagde vi et sitemap for å komme frem til informasjonsarkitekturen vi ønsket i løsningen.
+          Under prosessen ble det gjort flere iterasjoner på sitemappet, for å komme frem til noe som ville fungere både for mobil og desktop.
+          Tjønnås Delikatesser og Norvald Kafé er separerte enheter, men samtidig er det samme bedrift. Dermed måtte vi også lage noe som fungerte for begge enhetene.
+        </p>
+      </div>
+      <div class="project-sitemap-image">
+        <div class="project-sitemaps-flex reveal">
+          <figure class="project-sitemap reveal" style="text-align: left;">
+            <a href="images/tnsitemap.png" target="_blank" rel="noopener noreferrer">
+              <img src="images/tnsitemap.png" alt="Sitemap for Tjønnås" loading="lazy" style="margin-left: 0;">
+            </a>
+            <figcaption>Sitemap</figcaption>
+          </figure>
+        </div>
+      </div>
+    </article>
+    <article class="project-process-text reveal project-lofidelity-flex" aria-label="Low-Fidelity prototyper">
+      <div class="project-lofidelity-text">
+        <h3 class="project-process-subtitle">Low-Fidelity prototyper <span aria-hidden="true">🖍️</span></h3>
+        <p>Våre low-fidelity prototyper fikk flere endringer underveis.. 
+          De aller første prototypene er veldig ulike fra den endelige løsningen.
+          Layouten for hjemskjermen er kanskje det som har endret seg aller mest. Vi droppet blant
+          annet bildekarusell og generelle knapper til andre sider.
+          Den beslutningen førte også med seg en del diskusjon angående navigasjonen.
+          Vi kom frem til at en typisk burgermeny kanksje ikke er den mest brukervennlige løsningen.
+          Dermed valgte vi å lage noen hovednavigasjonsknapper i bunnen av skjermen, men også ha en meny som en del av hovednavigasjonen</p>
+      </div>
+      <div class="project-lofidelity-image">
+        <div class="project-sitemaps-flex reveal">
+          <figure class="project-sitemap reveal">
+            <img src="images/tnlofi.png" alt="Low-fidelity prototype for Tjønnås" loading="lazy">
+          </figure>
+        </div>
+      </div>
+    </article>
+    <article class="project-process-text reveal project-highfidelity-flex" aria-label="High-Fidelity">
+      <div class="project-highfidelity-text">
+        <h3 class="project-process-subtitle">High-Fidelity <span aria-hidden="true">🌟</span></h3>
+        <p>
+          Vårt endelige design er basert på innsikten vi fikk fra intervjuene, og det har vært en del iterasjoner underveis.
+          Vi valgte å fokusere på gavekurver og helgepakker, siden det var behov for bestillingssystem og produktsynligheten. 
+          Denne versjonen av prototypen svarer til disse kundebehovene, som var målgruppen vi valgte å begrense oss til.
+        </p>
+        <p>I etterkant av dette prosjektet har jeg iterert litt på designet for å forbedre brukeropplevelsen.
+          Jeg har blant annet lagt til litt flere farger og rettet opp i layouten enkelte steder. 
+          Fargene i den ferdigstilte prototypene var ikke helt optimale, så jeg byttet dem ut med noen friskere farger.
+          I tillegg til dette endret jeg hjemskjermen slik at åpningstidene og lokasjon er mer synlige. 
+          Affinitymappet avslørte nemlig at dette også er viktig for kundene, og at dagens løsning ikke kommuniserer åpningstidene tydelig nok.
+        </p>
+        <ul class="wireframe-list">
+          <li>Funksjoner for produktsynlighet</li>
+          <li>Bestillingssystem</li>
+          <li>Synliggjøre Åpningstider & Lokasjon</li>
+          <li>Iterasjoner på farge</li>
+          <li>Justeringer av layout</li>
+        </ul>
+      </div>
+      <div class="project-highfidelity-image">
+        <div class="project-sitemaps-flex reveal">
+          <figure class="project-sitemap reveal">
+            <img src="images/tnbeforenafter.png" alt="High-fidelity prototype for Tjønnås" loading="lazy">
+            <figcaption>Min iterasjon</figcaption>
+          </figure>
+        </div>
+        <div class="project-sitemaps-flex reveal">
+          <figure class="project-sitemap reveal">
+            <img src="images/tnfunksjon5.png" alt="Iterert high-fidelity prototype for Tjønnås" loading="lazy">
+            <figcaption>Min versjon</figcaption>
+          </figure>
+        </div>
+      </div>
+    </article>
+    <article class="project-process-text reveal" aria-label="Refleksjon">
+      <h3 class="project-process-subtitle">Refleksjon <span aria-hidden="true">💭</span></h3>
+      <p>Det har vært skikkelig lærerikt å gjennomgå et prosjekt med hovedvekt på grundig innsiktsarbeid!
+        Det var også interessant å jobbe tverrfaglig med grafisk design og webutvikling. Her erfarte jeg 
+        også at Figma ikke var et kjent verktøy for alle.
+      </p>
+      <p>Det er nok flere ting ved dette arbeidet jeg ville endret på. Som sagt har jeg allerede iterert litt videre på designet.</p>
+      <h4 class="reflection-list-title">Mine viktigste forbedringspunkter:</h4>
+      <ul class="reflection-list">
+        <li>Fikse navigasjonen <span aria-hidden="true">🧭</span></li>
+        <li>Arbeide utifra et designsystem <span aria-hidden="true">🎨</span></li>
+      </ul>
+      <p>Det er for mange knapper i navigasjonen, og det gjør at de er veldig små og vanskelige å trykke på. I tillegg til dette så
+        hadde vi nok fått bedre visuell konsistens hvis alle jobbet utifra de samme elementene og fargene. Det hadde også gjort det enklere å iterere videre på designet, og det hadde vært lettere for alle i gruppen å jobbe i Figma.
+        Det er nok flere ting ved denne prototypen jeg ville endret på i etterkant, men kanskje spesielt navigasjonen.
+      </p>
+    </article>
+    <article class="project-process-text reveal project-solution-flex" aria-label="Prototype-løsning">
+      <div class="project-solution-text">
+        <h3 class="project-process-subtitle">Se prototypen OG PROSESS <span aria-hidden="true">🖥️</span></h3>
+        <p>Link til prototypen i Figma: <a href="https://www.figma.com/proto/g6flqCqh2Y1aNqRgA8u7wb/Tj%C3%B8nn%C3%A5s-Delikatesser?page-id=0%3A1&node-id=33-287&viewport=435%2C-906%2C0.2&t=uSuqUJ6S34AMQk8W-1&scaling=scale-down&content-scaling=fixed" target="_blank" rel="noopener noreferrer">Åpne Figma-prototypen</a></p>
+        <p>Link til prosess i Figjam: <a href="https://www.figma.com/board/9KuIeuoM0VgZ2z22AJV0JF/Designprosess-TN?node-id=1-320&t=Alf1HBCMGMdn5f8s-1" target="_blank" rel="noopener noreferrer">Åpne Figjam (Innsikt)</a></p>
+      </div>
+      <div class="project-solution-image">
+        <figure class="project-solution reveal">
+          <img src="images/TNfunksjon5.png" alt="Skjermbilde av prototype-løsningen" loading="lazy">
+          <figcaption>Designforslag</figcaption>
+        </figure>
+      </div>
+    </article>
+  </section>
+
+  <!-- Bottom CTA: Learn more about me -->
+  <div class="bottom-cta" aria-label="Mer om meg">
+    <a class="bottom-cta__btn" href="about.html" aria-label="Lær mer om meg (åpner Om-siden)">
+      <span>Lær mer om meg</span>
+      <span class="bottom-cta__arrow" aria-hidden="true">→</span>
+    </a>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      © 2026 Selma Bjørtomt Keser
+    </div>
+  </footer>
+
+  <script src="assets/js/motion.js"></script>
+  <script>
+  function revealOnScroll() {
+    const reveals = document.querySelectorAll('.reveal');
+    for (const el of reveals) {
+      const windowHeight = window.innerHeight;
+      const elementTop = el.getBoundingClientRect().top;
+      const revealPoint = 80;
+      if (elementTop < windowHeight - revealPoint) {
+        el.classList.add('active');
+      } else {
+        el.classList.remove('active');
+      }
+    }
+  }
+  window.addEventListener('scroll', revealOnScroll);
+  window.addEventListener('load', revealOnScroll);
+
+  // Bildekarusell for prosjektmedia
+  const images = [
+    'images/tnmockup.jpg',
+    'images/tnbehov.png',
+    'images/tnlofi.png',
+    'images/tnskisse1.png',
+    'images/tnfunksjon5.png'
+  ];
+  const alts = [
+    'Tjønnås – mockup',
+    'Tjønnås – behovskart',
+    'Tjønnås – low-fidelity prototype',
+    'Tjønnås – skisse 1',
+    'Tjønnås – funksjon 5'
+  ];
+  let current = 0;
+  const heroImg = document.getElementById('projectHeroImage');
+  const mediaSection = document.querySelector('.project-media');
+  function showImage(idx) {
+    heroImg.src = images[idx];
+    heroImg.alt = alts[idx];
+  }
+  if (heroImg && mediaSection) {
+    mediaSection.addEventListener('click', function() {
+      current = (current + 1) % images.length;
+      showImage(current);
+    });
+    setInterval(function() {
+      current = (current + 1) % images.length;
+      showImage(current);
+    }, 4000);
+  }
+  </script>
+</body>
+</html>

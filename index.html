@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selma Bjørtomt Keser | Portefølje 2026</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+  <canvas id="bg-canvas" style="position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:0;pointer-events:none;"></canvas>
+  <header>
+    <div class="logo">SBK</div>
+    <nav aria-label="Hovedmeny">
+      <a href="index.html" class="active">PORTEFØLJE</a>
+      <a href="about.html">OM</a>
+      <a href="Kontakt.html">KONTAKT</a>
+    </nav>
+  </header>
+  <main>
+    <div class="hero-flex">
+      <div class="hero-img-container">
+        <img src="images/SelmaPix3.png" alt="Pixel character Selma" class="hero-pixel-img">
+      </div>
+      <div class="hero-content">
+        <div class="subtitle">Portefølje 2026</div>
+        <h1><span class="single-line-name">Selma Bjørtomt Keser</span></h1>
+        <div class="bio" id="bio">
+          <strong>Heisann👋</strong><br>
+          Jeg studerer interaksjonsdesign ved NTNU i Gjøvik, og er interessert i mennesker 👤, psykologi 🧠 og hvordan vi faktisk bruker teknologi!📱
+        </div>
+
+        <div class="hero-mobile-figures" aria-hidden="true">
+          <img src="images/SelmaPix3.png" alt="" class="hero-mobile-selma">
+          <img src="images/birdmelis3.png" alt="" class="hero-mobile-melis">
+        </div>
+
+        <!-- Mobile-only replay button for the intro animation -->
+        <button class="hero-mobile-replay" type="button" aria-label="Spill av animasjonen på nytt" title="Replay">
+          ↻
+        </button>
+
+        <div style="display: flex; align-items: center; gap: 44px;">
+          <a class="cta" href="#prosjekter" id="ctaBtn">↓ Se prosjekter ↓ </a>
+          <span class="cta-bird" id="ctaBird">
+            <img src="images/birdmelis3.png" alt="Pixel bird jumping" class="pixel-bird-jump" id="pixelBirdJump">
+          </span>
+        </div>
+      </div>
+      <!---<div class="hero-corner-info">
+        #22 år<br>
+        #🦜Birdlover
+      </div> -->
+    </div>
+  </main>
+  <!-- move Prosjekter outside main to be true full-width -->
+  <div class="projects-section-spacer"></div>
+  <section class="projects-section fullwidth-projects" id="prosjekter">
+    <div class="projects-container">
+      <div class="projects-intro">
+        <h2 class="projects-title">Utvalgte prosjekter</h2>
+        <div class="projects-subtitle">Her er noen utvalgte prototyper og designforslag :)</div>
+        <!-- optional description -->
+        <!-- <p class="projects-lead">Fra ord til opplevelser – hvert prosjekt er en liten historie</p> -->
+      </div>
+      <div class="projects-list">
+        <div class="project-card project-green" onclick="window.location.href='p4-museum.html'" tabindex="0" role="link" aria-label="Gå til Museum prosjektet">
+          <div class="project-card-media">
+            <img src="images/evmuseum.jpg" alt="Prosjekt 4 bilde" class="project-card-img">
+          </div>
+          <span class="project-year">2026 - Pågående prosjekt!</span>
+          <h3>Emanuel Vigeland Museum 🏛️</h3>
+          <p> Redesign av nettsiden for Emanuel Vigelands musum, med vektleggelse av designsystem og universell utforming.
+          </p>
+          <a href="p4-museum.html" class="project-link">Se mer →</a>
+        </div>
+        <div class="project-card project-pink" onclick="window.location.href='p1-siminnlandet.html'" tabindex="0" role="link" aria-label="Gå til SIMInnlandet prosjektet">
+          <div class="project-card-media">
+            <img src="images/xr2.png" alt="Prosjekt 1 bilde" class="project-card-img" id="siminnlandet-img" data-alt-src="images/xr1.png">
+          </div>
+          <span class="project-year">2025</span>
+          <h3>SIMInnlandet 🏥</h3>
+          <p> VR simulering for opplæring av helsepersonell ved sykehuset i Innlandet.</p>
+          <a href="p1-siminnlandet.html" class="project-link">Se mer →</a>
+        </div>
+
+        <div class="project-card project-yellow" onclick="window.location.href='p2-tjonnas.html'" tabindex="0" role="link" aria-label="Gå til Tjønnås prosjektet">
+          <div class="project-card-media">
+            <img src="images/TNcard.png" alt="Prosjekt 2 bilde" class="project-card-img">
+          </div>
+          <span class="project-year">2025</span>
+          <h3>Tjønnås & Norvald ☕️</h3>
+          <p>Nettsider for desktop og mobil, med både booking og bestillingsystem basert på kundebehov.</p>
+          <a href="p2-tjonnas.html" class="project-link">Se mer →</a>
+        </div>
+
+        <div class="project-card project-blue" onclick="window.location.href='p3-bobatea.html'" tabindex="0" role="link" aria-label="Gå til Bubble Tea prosjektet">
+          <div class="project-card-media">
+            <img src="images/Bobamockup.jpg" alt="Prosjekt 3 bilde" class="project-card-img">
+          </div>
+          <span class="project-year">2024</span>
+          <h3>Bubble Tea 🧋</h3>
+          <p><strong>Eget prosjekt</strong> hvor jeg designet en prototype for en app som lar deg bestille bubble tea.</p>
+          <a href="p3-bobatea.html" class="project-link">Se mer →</a>
+        </div>
+        <div class="project-card project-yellow project-scroll-card" tabindex="0" role="link" aria-label="Scroll videre til pågående prosjekter">
+          <a href="#ongoing-projects" class="project-scroll-link" aria-hidden="true" tabindex="-1" style="position:absolute;inset:0;"></a>
+          <div class="project-scroll-emoji" style="font-size:2.5rem;margin-bottom:0.5em;">👇</div>
+          <h3 style="margin:0 0 0.3em 0;font-size:1.7rem;">Scroll videre</h3>
+          <div class="project-scroll-lead" style="color:#888;font-size:1.1rem;margin-bottom:1.2em;">for pågående prosjekter</div>
+          <div class="project-scroll-arrow" style="font-size:2rem;color:#ff8800;">↓</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="ongoing-projects" class="ongoing-section">
+    <div class="projects-container">
+      <div class="ongoing-header">
+        <h2 class="ongoing-title">Pågående prosjekter! <span class="ongoing-title-emoji">🚧</span></h2>
+        <div class="ongoing-lead"> Dette er prosjekter jeg arbeider med akkurat nå.</div>
+      </div>
+      <div class="ongoing-cards">
+        <div class="ongoing-card ongoing-blue">
+          <div class="ongoing-card-emoji">🎓</div>
+          <div class="ongoing-card-status"><span class="ongoing-status-dot"></span> Nå</div>
+          <div class="ongoing-card-title">Tjenestedesign/Institutt for Design</div>
+          <div class="ongoing-card-desc">Ny onboarding for nye design studenter ved NTNU! </div>
+
+          <!-- Replaces the progress bar with current phase -->
+          <div class="ongoing-card-phase" aria-label="Nåværende fase">
+            <span class="ongoing-phase-label">Akkurat nå:</span>
+            <span class="ongoing-phase-pill">Innsiktsarbeid</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bottom CTA: Learn more about me -->
+  <div class="bottom-cta" aria-label="Mer om meg">
+    <a class="bottom-cta__btn" href="about.html" aria-label="Lær mer om meg (åpner Om-siden)">
+      <span>Lær mer om meg</span>
+      <span class="bottom-cta__arrow" aria-hidden="true">→</span>
+    </a>
+  </div>
+
+  <footer class="site-footer site-footer--contact" aria-label="Footer" id="kontakt">
+    <div class="footer-wrap">
+      <div class="footer-main">
+        <div class="footer-title">Ta kontakt</div>
+
+        <div class="footer-links" aria-label="Kontaktlenker">
+          <a class="footer-link" href="mailto:selmake9@gmail.com" aria-label="Send e-post">
+            <span class="footer-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
+                <path fill="currentColor" d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/>
+              </svg>
+            </span>
+            <span class="footer-link-text">selmake9@gmail.com</span>
+          </a>
+          <a class="footer-link" href="https://www.linkedin.com/in/selma-b-k-239620324/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <span class="footer-icon" aria-hidden="true">in</span>
+            <span class="footer-link-text">LinkedIn</span>
+          </a>
+          <a class="footer-link" href="https://github.com/selmabk4" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <span class="footer-icon" aria-hidden="true">
+              <svg viewBox="0 0 16 16" width="18" height="18" aria-hidden="true" focusable="false">
+                <path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/>
+              </svg>
+            </span>
+            <span class="footer-link-text">GitHub</span>
+          </a>
+        </div>
+
+        <div class="footer-copy">© 2026 Selma Bjørtomt Keser</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll-to-top button -->
+  <button class="to-top" type="button" aria-label="Til toppen" title="Til toppen">↑</button>
+
+  <script src="assets/js/motion.js"></script>
+
+  <script>
+    // Mobile-only: replay Selma + Melis intro animations
+    (function () {
+      const btn = document.querySelector('.hero-mobile-replay');
+      const selma = document.querySelector('.hero-mobile-selma');
+      const melis = document.querySelector('.hero-mobile-melis');
+      if (!btn || !selma || !melis) return;
+
+      const isMobile = () => window.matchMedia('(max-width: 700px)').matches;
+      const allowsMotion = () => !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      const replay = () => {
+        if (!isMobile() || !allowsMotion()) return;
+
+        // Force restart CSS animations
+        selma.style.animation = 'none';
+        melis.style.animation = 'none';
+        // Trigger reflow
+        void selma.offsetHeight;
+        void melis.offsetHeight;
+        selma.style.animation = '';
+        melis.style.animation = '';
+      };
+
+      btn.addEventListener('click', replay);
+    })();
+  </script>
+
+  <script>
+    setTimeout(function() {
+      var bird = document.getElementById('bioBird');
+      var birdImg = document.getElementById('pixelBirdJump');
+      var btn = document.getElementById('ctaBtn');
+      if (bird && btn && birdImg) {
+        bird.style.transition = 'all 0.8s cubic-bezier(.6,0,.4,1)';
+        bird.style.position = 'absolute';
+        var btnRect = btn.getBoundingClientRect();
+        var bioRect = bird.parentElement.getBoundingClientRect();
+        var offsetY = btnRect.top - bioRect.top + btn.offsetHeight/2 - bird.offsetHeight/2;
+        var offsetX = btnRect.left - bioRect.left + btn.offsetWidth + 12;
+        bird.style.transform = 'translate(' + offsetX + 'px, ' + offsetY + 'px)';
+        setTimeout(function() {
+          birdImg.style.transition = 'all 0.5s cubic-bezier(.6,0,.4,1)';
+          birdImg.style.width = '64px';
+        }, 800);
+      }
+    }, 5000);
+  </script>
+
+  <script>
+    // Swap image on hover for first project card
+    const simCard = document.querySelector('.project-card.project-pink');
+    const simImg = document.getElementById('siminnlandet-img');
+    if (simCard && simImg) {
+      const originalSrc = simImg.getAttribute('src');
+      const altSrc = simImg.getAttribute('data-alt-src');
+      simCard.addEventListener('mouseenter', () => {
+        simImg.setAttribute('src', altSrc);
+      });
+      simCard.addEventListener('mouseleave', () => {
+        simImg.setAttribute('src', originalSrc);
+      });
+    }
+  </script>
+</body>
+</html>

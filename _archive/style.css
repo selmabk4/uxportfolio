@@ -1,0 +1,14 @@
+/* Legacy stylesheet.
+
+  This project has been reorganized.
+  All site CSS now lives in:
+    - css/base.css
+    - css/home.css
+    - css/about-page.css
+    - css/contact-page.css
+
+  Project pages CSS lives in:
+    - projectstyle.css
+
+  The HTML loads assets/css/main.css and assets/css/project.css which import the files above.
+*/

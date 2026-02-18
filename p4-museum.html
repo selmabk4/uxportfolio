@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emanuel Vigelands Museum</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/project.css">
+</head>
+<body>
+  <canvas id="bg-canvas" style="position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:0;pointer-events:none;"></canvas>
+  <header>
+    <div class="logo">SBK</div>
+    <nav aria-label="Hovedmeny">
+      <a href="index.html" class="active">PORTEFØLJE</a>
+      <a href="about.html">OM</a>
+      <a href="Kontakt.html">KONTAKT</a>
+    </nav>
+  </header>
+
+  <div class="project-back-btn-container">
+    <a class="project-back-btn" href="index.html#prosjekter" aria-label="Tilbake">
+      <span class="arrow">←</span>
+      <span>Tilbake</span>
+    </a>
+  </div>
+
+  <main class="project-hero reveal">
+    <div class="project-left">
+      <section class="project-media" aria-label="Prosjektbilde" role="button" tabindex="0" aria-controls="projectHeroImage" aria-label="Neste bilde">
+        <img id="projectHeroImage" src="images/evmuseum.jpg" alt="Emanuel Vigelands Museum – bilde 1" loading="eager">
+        <span class="project-media-hint" aria-hidden="true">Klikk for neste bilde</span>
+      </section>
+      <section class="project-note" aria-label="Prosjektbeskrivelse">
+       I dette prosjektet arbeider jeg tverrfaglig med studenter fra grafisk design. 
+       <strong>Prosjektet er pågående og skal</strong> resultere i en ny nettside, da dagens nettside er svært utdatert. 
+      </section>
+    </div>
+    <section class="project-overview" aria-label="Prosjektoversikt">
+      <h1>🏛️ Emanuel Vigelands Museum</h1>
+      <ul class="project-overview-list">
+        <li><span class="project-overview-label">Oppdragsgiver:</span> <span class="project-overview-value"><a href="https://www.emanuelvigeland.museum.no/museet.htm" target="_blank" rel="noopener noreferrer">Emanuel Vigelands Museum</a></span></li>
+        <li><span class="project-overview-label">Oppgave:</span> <span class="project-overview-value">Ny nettside og designsystem som følger WCAG</span></li>
+        <li><span class="project-overview-label">Emne:</span> <span class="project-overview-value">Designsystemer og universell utforming</span></li>
+        <li><span class="project-overview-label">Tidsramme:</span> <span class="project-overview-value">🕦 15 uker</span></li>
+        <li><span class="project-overview-label">Resultat:</span> <span class="project-overview-value">Prototype og designsystem for museet</span></li>
+      </ul>
+    </section>
+  </main>
+
+  <section class="project-process reveal" aria-label="Designprosess">
+    <div class="project-process-figure-flex">
+      <h3 class="project-process-subtitle"> Planlagt Designprosess <span aria-hidden="true">🎨</span></h3>
+      <div class="project-process-text">
+        <div class="process-flex">
+          <ul class="process-list">
+            <li>Ekskursjon ✅</li>
+            <li>UX-Evaluering ✅</li>
+            <li>Affinitymap ✅</li>
+            <li>MoSCoW-prioritering ✅</li>
+            <li>Sitemap ✅</li>
+            <li>User Flow ✅</li>
+            <li>Mer kommer...</li>
+          </ul>
+          <figure class="process-image">
+            <img src="images/dd.png" alt="Designprosess illustrasjon" loading="lazy">
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <article class="project-process-text reveal" aria-label="Innsiktsarbeid">
+      <h3 class="project-process-subtitle">Innsiktsarbeid <span aria-hidden="true">🔎</span></h3>
+      <div class="project-insight-flex">
+        <div class="project-insight-text">
+          <p>
+            Dette prosjektet startet med en ekskursjon til Emanuel Vigelands museum.
+            Emanuel Vigeland er broren til den kjente kunstneren Gustav Vigeland. Nettsiden er svært utdatert og svarer ikke til dagens behov.
+            Det er blant annet vanskelig å bestille billetter, men også leie lokalet for arrangementer. Mye av kommunikasjonen
+            går igjennom Facebook, og besøkende får ikke med seg alle arrangementene. Her gjorde vi oss noen notater og snakket med oppdragsgiveren for å få en bedre forståelse av behovet og brandingen.
+          </p>
+          <p class="project-process-highlight"><strong>Hovedfunn:</strong> Sterkt behov for en universell utformet nettside med en bilettløsning</p>
+          <figure class="project-affinity reveal">
+            <img src="images/evaffinity.png" alt="Affinity Map" loading="lazy">
+            <figcaption>Affinity Map</figcaption>
+          </figure>
+        </div>
+      </div>
+    </article>
+
+    <article class="project-process-text reveal" aria-label="Evaluering">
+      <h3 class="project-process-subtitle">Evaluering <span aria-hidden="true">🧪</span></h3>
+      <p>
+        UX-Evaluering av dagens løsning avdekket flere WCAG-brudd og brukervennlighetsproblemer. 
+        Kontrasten er alt for lav enkelte steder og typografien har lav lesbarhet. 
+        Navigasjonen er også svært utdatert. I tillegg til dette har flere av sidene horizontal scroll, som er problematisk.
+      </p>
+      <p>Etter evalueringen gjennomførte vi en MoSCoW prioritering av funnene våre, men også av ønskene til oppdragsgiveren</p>
+      <div class="moscow-box" style="margin-top: 1.5rem; padding: 1rem; background: #e9f7ef; border-radius: 8px;">
+        <h4 style="margin-bottom: 0.5rem;">MoSCoW-prioritering</h4>
+        <a href="images/moscow.png" target="_blank" rel="noopener noreferrer">
+          <img src="images/moscow.png" alt="MoSCoW-prioritering illustrasjon" style="max-width: 600px; width: 100%; display: block; margin: 0 auto 1rem auto; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.07);">
+        </a>
+      </div>
+    </article>
+
+    <article class="project-process-text reveal project-sitemap-flex" aria-label="Sitemap">
+      <div class="project-sitemap-text">
+        <h3 class="project-process-subtitle">Sitemap <span aria-hidden="true">🗺️</span></h3>
+        <p>Idéutviklingsprosessen har startet, og vi har valgt å lage sitemap.
+            Vi startet med å lage et sitemap hver, og endte opp med et felles sitemap.
+            Dette sitemapet er første utkast og det vil komme iterasjoner etterhvert som prosjektet utvikler seg.
+            Kartet har arrangementer, booking, Emanuel Vigeland, Museet og kontakt som hovednavigasjon.
+        </p>
+      </div>
+      <div class="project-sitemap-image">
+        <div class="project-sitemaps-flex reveal">
+          <figure class="project-sitemap reveal">
+            <a href="images/evsitemap.png" target="_blank" rel="noopener noreferrer">
+              <img src="images/evsitemap.png" alt="Sitemap for museet" loading="lazy">
+            </a>
+            <figcaption>Sitemap</figcaption>
+          </figure>
+        </div>
+      </div>
+    </article>
+
+    <article class="project-process-text reveal project-userflow-flex" aria-label="User Flow">
+      <div class="project-userflow-text">
+        <h3 class="project-process-subtitle">User Flow <span aria-hidden="true">🧭</span></h3>
+        <p>Ved siden av sitemap har vi også lagd User Flows for å visualisere brukerreisen.
+            Dette har så langt hjulpet oss med å forbedre sitemapet, slik at støtter brukerreisen bedre. 
+        </p>
+      </div>
+      <div class="project-userflow-image">
+        <div class="project-sitemaps-flex reveal">
+          <figure class="project-sitemap reveal">
+            <a href="images/userflow.png" target="_blank" rel="noopener noreferrer">
+              <img src="images/userflow.png" alt="User Flow for museet" loading="lazy">
+            </a>
+            <figcaption>User Flow</figcaption>
+          </figure>
+        </div>
+        <div class="coming-soon-box" style="margin-top: 2rem; padding: 1.5rem; background: #f5f5f5; border-radius: 8px; text-align: center; font-size: 1.2rem; color: #555;">
+          <span style="font-size: 2rem;">⏳</span>
+          <div>Mer kommer straks! Prosjektet pågår fortsatt!</div>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <!-- Bottom CTA: Learn more about me -->
+  <div class="bottom-cta" aria-label="Mer om meg">
+    <a class="bottom-cta__btn" href="about.html" aria-label="Lær mer om meg (åpner Om-siden)">
+      <span>Lær mer om meg</span>
+      <span class="bottom-cta__arrow" aria-hidden="true">→</span>
+    </a>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      © 2026 Selma Bjørtomt Keser
+    </div>
+  </footer>
+
+  <script src="assets/js/motion.js"></script>
+  <script>
+  function revealOnScroll() {
+    const reveals = document.querySelectorAll('.reveal');
+    for (const el of reveals) {
+      const windowHeight = window.innerHeight;
+      const elementTop = el.getBoundingClientRect().top;
+      const revealPoint = 80;
+      if (elementTop < windowHeight - revealPoint) {
+        el.classList.add('active');
+      } else {
+        el.classList.remove('active');
+      }
+    }
+  }
+  window.addEventListener('scroll', revealOnScroll);
+  window.addEventListener('load', revealOnScroll);
+
+  // Bildekarusell for prosjektmedia
+  const images = [
+    'images/evmuseum.jpg',
+    'images/evmu.png',
+    'images/evmu2.png',
+    'images/evmu3.png'
+  ];
+  const alts = [
+    'Emanuel Vigelands Museum – bilde 1',
+    'Emanuel Vigelands Museum – bilde 2',
+    'Emanuel Vigelands Museum – bilde 3',
+    'Emanuel Vigelands Museum – bilde 4'
+  ];
+  let current = 0;
+  const heroImg = document.getElementById('projectHeroImage');
+  const mediaSection = document.querySelector('.project-media');
+  function showImage(idx) {
+    heroImg.src = images[idx];
+    heroImg.alt = alts[idx];
+  }
+  if (heroImg && mediaSection) {
+    mediaSection.addEventListener('click', function() {
+      current = (current + 1) % images.length;
+      showImage(current);
+    });
+    setInterval(function() {
+      current = (current + 1) % images.length;
+      showImage(current);
+    }, 4000);
+  }
+  </script>
+</body>
+</html>
